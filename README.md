@@ -1,8 +1,7 @@
-!Under construction!
 
 # My_Portfolio
 Hello there,
-Thank you for visiting my github profile. Please click here to visit my profile (yes! finally got myself a domain).
+Thank you for visiting my github profile. Please click at the following link to visit my profile:
+https://atulg.me/
 
-You may also download the files in this repo to your system and run the index page locally.
-/todo STEPS
+Have a great day!
