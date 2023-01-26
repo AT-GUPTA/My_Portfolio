@@ -5,7 +5,6 @@ body {
   color: white;
   position: relative;
 }
-
 .nav-item{
   font-size: 20px;
   backface-visibility: hidden;
@@ -48,6 +47,14 @@ a{
   transition: .5s color ease-in-out;
 }
 
+.anc {
+  opacity: 0.75;
+  color: white;
+}
+.anc:hover{
+  opacity: 1;
+}
+
 .page-title {
   opacity: .8 !important;
 }
@@ -72,7 +79,6 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
-  padding-bottom: 10px;
   opacity: 0.9;
 }
 .navbar-custom {
@@ -216,6 +222,7 @@ td{
   font-size: 16px;
 }
 .form-container{
-  width:60%;
-  margin-left: 20%;
+  width:45%;
+  margin-left: auto;
+  margin-right: auto;
 }
