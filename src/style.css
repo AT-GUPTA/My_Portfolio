@@ -1,0 +1,168 @@
+body {
+  background-color: rgba(0,0,0,1);
+  font-weight:600;
+  text-align:center !important;
+  color: white;
+  position: relative;
+}
+
+.nav-item{
+  font-size: 20px;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+  margin-left:3em;
+  margin-right:3em;
+  text-transform: uppercase;
+  
+}
+
+.nav-item:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.nav-item:hover, .nav-item:active, .nav-item:focus{
+  transform: translateY(-5px);
+}
+.nav-item:hover:before, .nav-item:active:before, .nav-item:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+a{
+  transition: .5s color ease-in-out;
+}
+
+.page-title {
+  opacity: .8 !important;
+}
+
+.name{
+  position: relative;
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-top: 100px;
+  font-family: 'Sacramento', cursive;
+  opacity: 0.8;
+}
+.name:hover{
+  opacity: 1;
+}
+.nametag:hover{
+  opacity: 1;
+}
+.nametag {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+  opacity: 0.9;
+}
+.navbar-custom {
+  background-color: black;
+} 
+.mypic{
+  height: 200 px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.alltext{
+  color: #ffffff;
+  opacity: 0.9;
+}
+.custom-head{
+  font-weight: 500;
+  opacity: 0.8;
+}
+.custom-head:hover{
+  opacity: 1;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillHead{
+  width: auto;
+  margin-left: 20px;
+}
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+} 
+.color-offwhite {
+	color: #ffffffb9;
+}
+.bg-offwhite {
+	background-color: #ffffffb9;
+}
+.progress-style{
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.loading1 {animation: load1 2.5s normal;}
+@keyframes load1 {0% {width: 0%;background-color: #858585d5;}100% {width: 90%;background-color: #ffffffb9;}}
+
+.loading2 {animation: load2 2.5s normal;}
+@keyframes load2 {0% {width: 0%;background-color: #858585d5;}100% {width: 85%;background-color: #ffffffb9;}}
+
+.loading3 {animation: load3 2.5s normal;}
+@keyframes load3 {0% {width: 0%;background-color: #858585d5;}100% {width: 75%;background-color: #ffffffb9;}}
+
+.loading4 {animation: load4 2.5s normal;}
+@keyframes load4 {0% {width: 0%;background-color: #858585d5;}100% {width: 85%;background-color: #ffffffb9;}}
+
+.loading5 {animation: load5 2.5s normal;}
+@keyframes load5 {0% {width: 0%;background-color: #858585d5;}100% {width: 75%;background-color: #ffffffb9;}}
+
+.loading6 {animation: load6 2.5s normal;}
+@keyframes load6 {0% {width: 0%;background-color: #858585d5;}100% {width: 75%;background-color: #ffffffb9;}}
+
+.loading7 {animation: load7 2.5s normal;}
+@keyframes load7 {0% {width: 0%;background-color: #858585d5;}100% {width: 65%;background-color: #ffffffb9;}}
+
+.loading8 {animation: load8 2.5s normal;}
+@keyframes load8 {0% {width: 0%;background-color: #858585d5;}100% {width: 80%;background-color: #ffffffb9;}}
+
+.loading9 {animation: load9 2.5s normal;}
+@keyframes load9 {0% {width: 0%;background-color: #858585d5;}100% {width: 62.5%;background-color: #ffffffb9;}}
+
+.loading10 {animation: load10 2.5s normal;}
+@keyframes load10 {0% {width: 0%;background-color: #858585d5;}100% {width: 80%;background-color: #ffffffb9;}}
+
+.loading11 {animation: load11 2.5s normal;}
+@keyframes load11 {0% {width: 0%;background-color: #858585d5;}100% {width: 70%;background-color: #ffffffb9;}}
+
+
+#background-image {
+	z-index: -1;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	opacity: 0.75;
+	background-image:url("../resources/Images/bg.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
