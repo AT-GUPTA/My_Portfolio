@@ -152,7 +152,10 @@ a{
 .loading11 {animation: load11 2.5s normal;}
 @keyframes load11 {0% {width: 0%;background-color: #858585d5;}100% {width: 70%;background-color: #ffffffb9;}}
 
-
+td{
+  text-align: left;
+  padding-right: 18px;
+}
 #background-image {
 	z-index: -1;
 	position: fixed;
@@ -165,4 +168,54 @@ a{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
+}
+.skill-container{
+  width:95%;
+  margin-left: 2.5%;
+}
+
+.timeline-container{
+  width:74%;
+  margin-left: 13%;
+  margin-top:2em;
+}
+.award-container{
+  width:80%;
+  margin-left: 10%;
+}
+
+.timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+}
+.left-a{
+  text-align: left;
+}
+.description{
+  font-size: 16px;
+}
+.form-container{
+  width:60%;
+  margin-left: 20%;
 }

@@ -15,6 +15,15 @@
   <link rel="icon" href="../resources/Images/favicon.png">
   <!--My CSS-->
   <link rel="stylesheet" href="style.css">
+  <script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("HqIEIIB4uaEdYWjIg");
+			})();
+		</script>
   <title>Atul Gupta</title>
 </head>
 
@@ -63,14 +72,16 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Skills -->
   <section id="skills">
-    <div class="container-fluid row py-5">
-      <div class="display-5 pt-3"><span class="custom-head">My Skills</span></div>
-      <ul class="list-group mt-4 ms-1 row" style="padding:0 0 0 0; margin: 10 24 0 0;">
-        <li class="list-group-item bg-transparent text-light">
-          <div class="my-0">
+    <div class="container-fluid py-5">
+      <div class="skill-container">
+        <div class="display-5 pt-3">
+          <span class="custom-head">My Skills</span>
+        </div>
+        <ul class="list-group mt-4">
+          <li class="list-group-item bg-transparent text-light">
             <!--Backend-->
             <div class="row">
               <h5 class="skillHead"><i class="bi bi-database-fill-gear"></i> Back-end</h5>
@@ -189,7 +200,7 @@
                 </li>
               </ul>
             </div>
-          </br>
+            </br>
             <div class="row">
               <ul class="fs-5 mx-2 row list-unstyled">
                 <li class="col-md-3">Bootstrap</li>
@@ -229,36 +240,79 @@
               </ul>
             </div>
             <hr />
-            
+
             <!--Tech Tools-->
             <div class="row">
-              <h5 class="skillHead"><i class="bi bi-collection-fill"></i> Tech & Tools</h5>
+              <h5 class="skillHead"><i class="bi bi-nut-fill"></i> Tech & Tools</h5>
             </div>
             <div class="row">
               <ul class="fs-5 mx-2 row list-unstyled">
                 <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Git</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Jira/Confluence</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> AWS S3</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Zephyr</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Selenium</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Jenkins</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Prolog</li>
-                <li class="col-md-3"style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Photoshop</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Jira/Confluence
+                </li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> AWS S3</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Zephyr</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Selenium</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Jenkins</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Prolog</li>
+                <li class="col-md-3" style="margin-bottom: 7px"><i class="bi bi-check2-circle"></i> Photoshop</li>
               </ul>
-            </div>           
-          </div>
-        </li>
-
-      </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-
   <!-- Work -->
   <section id="work">
     <div class="container-fluid row py-5">
       <div class="display-5 pt-3"><span class="custom-head">My Experience</span>
       </div>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+      <div class="timeline-container">
+        <ul class="timeline">
+          <li class="timeline-item mb-5">
+            <div class="custom-head">
+              <h4 class="head left-a">Software Developer, <a href="https://countable.co"
+                  style="color: white;">Countable</a></h4>
+              <p class="subhead left-a">August 2022 - Present</p>
+              <p class="description left-a">
+                Worked with development teams and product owners to ideate software solutions. Developed Restful APIs
+                with Spring and Spring Boot. Troubleshooted and debugged user reported bugs from backend. Used multiple
+                back-end languages (Java & Python) along with front-end languages and libraries (JavaScript & Angular)
+                to build restful web application. <br>Internship: Worked on project of converting MySQL stored
+                procedures into REST APIs (Java) for performance optimization using SpringBoot.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item mb-5">
+            <div class="custom-head">
+              <h4 class="head left-a">Quality Assurance Analyst, <a href="https://countable.co"
+                  style="color: white;">Countable</a></h4>
+              <p class="subhead left-a">July 2021 - August 2022</p>
+              <p class="description left-a">
+                Created QA test artifacts (Test Strategy, Test Matrix, Test Scenarios, Test Cases, Test Results),
+                functional documentation, and testing (functional, Integration, Regression and UAT testing) using
+                Zephyr.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item mb-5">
+            <div class="custom-head">
+              <h4 class="head left-a">Vice President Academics, <span style="cursor: pointer;text-decoration:underline"
+                  data-toggle="tooltip" title="Software Engineering & Computer Science Society"><a
+                    href="https://www.linkedin.com/company/scs-concordia/" style="color: white;">SCS</a></span>,
+                Concordia University</h4>
+              <p class="subhead left-a">September 2021 - May 2022</p>
+              <p class="description left-a">
+                Planned and organized engineering workshops and events that helped students develop their careers in
+                Software Engineering and Computer Science. Arranged guest speakers for these workshops and responsible
+                for overseeing the academic activities organized by the society.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </section>
 
@@ -266,23 +320,124 @@
   <!-- Awards -->
   <section id="awards">
     <div class="container-fluid row py-5">
-      <div class="display-5 pt-3"><span class="custom-head">Awards</span></div>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+      <div class="display-5 pt-3"><span class="custom-head">Achievements</span></div>
+      <div class="timeline-container">
+        <ul class="list-group mt-4 ms-1 row">
+          <li class="list-group-item bg-transparent text-light">
+            <div class="my-0">
+              <hr>
+              <table class="custom-head">
+                <tr>
+                  <td>
+                    <h3><i class="bi bi-award-fill"> </i></h3>
+                  </td>
+                  <td>
+                    <h3> Bachelors in Computer Science, Concordia University</h3>
+                  </td>
+                <tr>
+                  <td></td>
+                  <td>
+                    <h5>2021-24 | GPA 4.00</h5>
+                  </td>
+                </tr>
+              </table>
+              <hr>
+              <table class="custom-head">
+                <tr>
+                  <td>
+                    <h3><i class="bi bi-award-fill"> </i></h3>
+                  </td>
+                  <td>
+                    <h3> Dean's List Award, Concordia University</h3>
+                  </td>
+                <tr>
+                  <td></td>
+                  <td>
+                    <h5>Academic Year: 2021-22 </h5>
+                  </td>
+                </tr>
+              </table>
+              <hr>
+              <table class="custom-head">
+                <tr>
+                  <td>
+                    <h3><i class="bi bi-award-fill"> </i></h3>
+                  </td>
+                  <td>
+                    <h3> Concordia University International Entrance Scholar</h3>
+                  </td>
+                <tr>
+                  <td></td>
+                  <td>
+                    <h5>Academic Years: 2021-23 </h5>
+                  </td>
+                </tr>
+              </table>
+              <hr>
 
+              <table class="custom-head">
+                <tr>
+                  <td>
+                    <h3><i class="bi bi-award-fill"> </i></h3>
+                  </td>
+                  <td>
+                    <h3> SAT Subject Tests | 2020</h3>
+                  </td>
+                <tr>
+                  <td></td>
+                  <td>
+                    <h5>Mathematics II: 800/800<br> Physics: 800/800 </h5>
+                  </td>
+
+                </tr>
+              </table>
+              <hr>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
 
   <!-- Contact -->
   <section id="contact">
-    <div class="container-fluid row py-5">
-      <div class="display-5 pt-3"><span class="custom-head">Let's get in touch!</span></div>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-      .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-
+    <div style="width: auto;">
+      <div class="container-fluid row py-5">
+        <div class="display-5 pt-3"><span class="custom-head">Contact Me</span></div>
+        <div class="form-container">
+          <div class="lead text-white mt-4 fs-5">
+            I’m interested in working with you and open to new opportunities. However, if you
+            have other request or question, drop a message!
+          </div>
+          <form class="form-inline" id="contact-form">
+            <div class="row my-3">
+              <div class="input-group col-lg mt-3 my-md-none">
+                <label for="name" class="input-group-text"><i class="bi bi-person"></i></label>
+                <input id="name" type="text" class="form-control" size="25" placeholder="Your Name" required />
+              </div>
+            </div>
+            <div class="input-group my-3">
+              <label for="email" class="input-group-text"><i class="bi bi-envelope"></i></label>
+              <input id="email" type="email" class="form-control" size="40" placeholder="Your Email"
+                  autocomplete="off" required />
+            </div>
+            <div class="input-group my-3">
+              <label for="subject" class="input-group-text"><i class="bi bi-card-heading"></i></label>
+              <input id="subject" type="text" class="form-control" size="100" placeholder="Subject" required />
+            </div>
+            <div class="form-group my-3">
+              <textarea id="message" type="text" class="form-control texthover" rows="5" placeholder="Your message goes here." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-light" id="submit">
+                Send Message
+              </button>
+        
+          </form>
+        </div>
+      </div>
     </div>
   </section>
-
 
   <!--jQuery, Popper.js, Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
