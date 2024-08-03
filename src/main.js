@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var projectCards = document.querySelectorAll(".project-card");
   var headings = document.querySelectorAll(".custom-head");
 
-  var observerOptions = { threshold: 0.5 };
+  var observerOptions = { threshold: [0, 0.25, 0.5, 0.75, 1] };
 
   var observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.intersectionRatio >= 0.25) {
         entry.target.classList.add("animate__fadeIn");
         entry.target.classList.remove("animate__fadeOut");
       } else {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // IntersectionObserver for project cards
   var projectObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.intersectionRatio >= 0.25) {
         entry.target.classList.add("in-view");
       } else {
         entry.target.classList.remove("in-view");
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // IntersectionObserver for headings
   var headingObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.intersectionRatio >= 0.25) {
         entry.target.classList.add("in-view");
       } else {
         entry.target.classList.remove("in-view");
@@ -84,10 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function isInView(elem) {
   var distance = elem.getBoundingClientRect();
   return (
-    (distance.top >= 0 && distance.top < window.innerHeight / 1.75) ||
-    (distance.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-      distance.bottom >= window.innerHeight / 1.75)
+      (distance.top >= 0 && distance.top < window.innerHeight / 1.75) ||
+      (distance.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+          distance.bottom >= window.innerHeight / 1.75)
   );
 }
 
